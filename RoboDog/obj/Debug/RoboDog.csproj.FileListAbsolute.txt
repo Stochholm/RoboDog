@@ -16,3 +16,4 @@ C:\Users\simo\Desktop\In progress\Mindstorms Hund\RoboDog\RoboDog\bin\Debug\Mono
 C:\Users\simo\Desktop\In progress\Mindstorms Hund\RoboDog\RoboDog\obj\Debug\RoboDog.dll
 C:\Users\simo\Desktop\In progress\Mindstorms Hund\RoboDog\RoboDog\obj\Debug\RoboDog.pdb
 C:\Users\simo\Desktop\In progress\Mindstorms Hund\RoboDog\RoboDog\obj\Debug\RoboDog.csprojResolveAssemblyReference.cache
+C:\Users\simo\Desktop\In progress\Mindstorms Hund\RoboDog\RoboDog\bin\Debug\MonoBrickFirmware.pdb

@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MonoBrickFirmware.Movement;
+using System;
 using System.Collections.Generic;
 namespace RoboDog
 {
     public interface IDog2
     {
-        
+      
         IMemory Memory { get; }
         int Age { get; }
         int BladderLevel { get; set; }
@@ -17,6 +18,7 @@ namespace RoboDog
        
         void Pee();
         void Drink();
+        void Stay();
         
         string ToString();
         

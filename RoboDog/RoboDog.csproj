@@ -32,6 +32,10 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MonoBrickFirmware, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\monoev3-release\MonoBrickFirmware\bin\Debug\MonoBrickFirmware.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>bin\Debug\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -43,18 +47,14 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="MonoBrickFirmware">
-      <HintPath>..\..\MonoBrickFirmware.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractDog.cs" />
     <Compile Include="AbstractMemory.cs" />
     <Compile Include="AbstractDog2.cs" />
     <Compile Include="IDog2.cs" />
-    <Compile Include="IMotorBase.cs" />
-    <Compile Include="IMotor.cs" />
     <Compile Include="ExternalMotor.cs" />
+    <Compile Include="IMovement.cs" />
     <Compile Include="Serializer.cs" />
     <Compile Include="DogEyes.cs" />
     <Compile Include="DogSound.cs" />
