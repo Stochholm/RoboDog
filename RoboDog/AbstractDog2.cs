@@ -320,19 +320,29 @@ namespace RoboDog
 
 
 
-        public void AddTrickToMemory(string name)
+        public virtual void AddTrickToMemory(string name)
         {
-            throw new NotImplementedException();
+            IDictionary<string, Action> newDict = new Dictionary<string, Action>();
+            foreach (KeyValuePair<string, Action> entry in combos)
+            {
+                if (entry.Key == name)
+                {
+                    newDict.Add(entry.Key, entry.Value);
+                    // memory.AddTrickToMemory(name, (entry.Value.Method).ToString());
+                    memory.AddTrickToMemory(newDict);
+                }
+            }
+
         }
 
-        public void AddAllTricksToMemory()
+        public virtual void AddAllTricksToMemory()
         {
-            throw new NotImplementedException();
+            memory.AddAllTricksToMemory(combos);
         }
 
-        public IDictionary<string, Action> GetTricksFromMemory()
+        public virtual IDictionary<string, Action> GetTricksFromMemory()
         {
-            throw new NotImplementedException();
+            return memory.GetTricksFromMemory();
         }
     }
 }
