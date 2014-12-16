@@ -318,5 +318,21 @@ namespace RoboDog
         }
 
 
+
+
+        public void AddTrickToMemory(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddAllTricksToMemory()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IDictionary<string, Action> GetTricksFromMemory()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -52,6 +52,7 @@
     <Compile Include="AbstractDog.cs" />
     <Compile Include="AbstractMemory.cs" />
     <Compile Include="AbstractDog2.cs" />
+    <Compile Include="IAbstractDog2.cs" />
     <Compile Include="IDog2.cs" />
     <Compile Include="ExternalMotor.cs" />
     <Compile Include="IMovement.cs" />

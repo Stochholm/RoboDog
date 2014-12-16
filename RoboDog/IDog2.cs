@@ -1,26 +1,32 @@
-﻿using MonoBrickFirmware.Movement;
-using System;
+﻿using System;
 using System.Collections.Generic;
 namespace RoboDog
 {
-    public interface IDog2
+    interface IDog2
     {
-      
-        IMemory Memory { get; }
         int Age { get; }
+        void Aging();
         int BladderLevel { get; set; }
-        string Name { get; set; }
+        void ControlEyes(DogEyes eyes);
+        DateTime DateOfBirth { get; }
+        void Drink();
+        DogEyes Eyes { get; }
         int Fullness { get; set; }
         int Happiness { get; set; }
-        DateTime DateOfBirth { get; }
-        DogEyes Eyes { get; }
-        DogSound Sound { get; }        
-       
+        void MakeSound(DogSound sound);
+        IMemory Memory { get; }
+        void Mood();
+        string Name { get; set; }
         void Pee();
-        void Drink();
+        void Pet();
+        void Search();
+        void Sit();
+        DogSound Sound { get; }
         void Stay();
-        
         string ToString();
-        
+        void DoTrick(string name);
+        void AddTrickToMemory(string name);
+        void AddAllTricksToMemory();
+        IDictionary<string, Action> GetTricksFromMemory();
     }
 }
